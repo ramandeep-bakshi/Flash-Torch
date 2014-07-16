@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/radial_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSwitch"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Use your Camera Flash as a Torch!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6987" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:gravity="center_horizontal"
+        android:text="Turn torch on/off by pressing the button above."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6987"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginBottom="28dp"
+        android:gravity="center_horizontal"
+        android:text="Application developed by Ramandeep Singh."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6987"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/torch_on_new" />
+
+</RelativeLayout>
